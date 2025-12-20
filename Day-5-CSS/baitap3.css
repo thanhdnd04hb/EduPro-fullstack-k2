@@ -1,0 +1,29 @@
+/* Thiết lập font chữ giống ảnh mẫu */
+body {
+  font-family: "Times New Roman", Times, serif;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.emoji-list {
+  list-style: none;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.emoji-list li {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  color: #000;
+}
+
+.emoji-list li::before {
+  content: "😊";
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  transform: translateY(-40%);
+  font-size: 25px;
+}
